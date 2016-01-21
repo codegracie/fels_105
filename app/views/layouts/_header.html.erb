@@ -1,0 +1,14 @@
+ <!-- Navbar -->
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class ="container">
+  <nav>
+    <%= link_to image_tag("images/framgia_logo.png", alt: "Framgia logo", size:"50x50" ),  "http://www.fragia.ph" %> 
+    <ul class ="nav bar navbar-nav pull-right">
+      <li><%= link_to t(".tablink_home"), home_path %></li>
+      <li><%= link_to t(".tablink_profile"), '#' %></li>
+      <li><%= link_to t(".tablink_categories"), categories_path %></li>
+      <li><%= link_to t(".tablink_results"), '#' %></li>
+      <li><%= link_to t(".tablink_login"), '#' %></li>
+    </ul>
+  </nav>
+</header> 
