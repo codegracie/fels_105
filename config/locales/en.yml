@@ -36,11 +36,13 @@ en:
     partials_admin:
     header:
       title: Admin Page
+      logout: Log out
       tablink_home: Home
       tablink_profile: Profile
       tablink_categories: Categories
       tablink_results: Results 
       tablink_login: Login
+      tablink_website: http://www.fragia.com
     sidebar:
       side_title: Framgia 105
       dashboard: Dashboard
@@ -48,6 +50,9 @@ en:
       words: List of words
       answers: List of answers
       users: List of users
+    footer:
+      small_title: Training Project by Grace Sojor and Christian Angel Galamay from Framgia Philippines
+      button_about: About this Project
   sessions:
     new:
       title: Sign in now
@@ -61,8 +66,9 @@ en:
       activities: Activities
       sample_activities: Learned 20 words in Lessons "Basic 500"-(2013/11/06)
     signup:
-     signup_welcome: Welcome to Framgia eLearning System
-     signup_description: Free online learning, and a worldwide community of native-speaking language learners just like you. 
+      signup_welcome: Welcome to Framgia eLearning System
+      signup_description: Free online learning, and a worldwide community of native-speaking language learners just like you. 
+      signup_button: Free Language Learning - Sign up now!
     about:
       about_desc: This is a training project by Grace Sojor and Christian Angel Galamay from Framgia Philippines.
       about_text: Framgia eLearning System is a FREE languange learning tool online. 
