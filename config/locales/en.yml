@@ -21,8 +21,6 @@
 
 en:
   layouts:
-
-  layouts:
     application:
       title: Fels105 Framgia eLearning System
     header:
@@ -36,10 +34,7 @@ en:
     partials_admin:
     header:
       title: Admin Page
-<<<<<<< HEAD
-=======
       logout: Log out
->>>>>>> Included updates
       tablink_home: Home
       tablink_profile: Profile
       tablink_categories: Categories
