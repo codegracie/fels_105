@@ -24,7 +24,7 @@ en:
 
   layouts:
     application:
-      title: Fels105 Framgia eLearning System
+      app_title: Fels105 Framgia eLearning System
     header:
       nav_title: Fels105 Framgia eLearning System
     footer:
@@ -51,7 +51,7 @@ en:
       answers: List of answers
       users: List of users
     footer:
-      small_title: Training Project by Grace Sojor and Christian Angel Galamay from Framgia Philippines
+      footer_title: Training Project by Grace Sojor and Christian Angel Galamay from Framgia Philippines
       button_about: About this Project
   sessions:
     new:
