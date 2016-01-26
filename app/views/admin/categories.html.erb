@@ -1,0 +1,60 @@
+<section class="wrapper">
+  <h3>
+    <i class="fa fa-angle-right">
+      <%= t ".title" %>
+    </i>
+  </h3>
+  <div class="row">
+    <div class="content-panel">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h2><%= t ".title" %></h2> 
+</div>
+<div class="panel-body">
+<div class="table-responsive">
+<table class="table table-striped table-bordered table-hover" id="dataTables-example">
+        <thead>
+            <tr>
+            <th>
+              <i class="fa fa-text-height">
+                <%= t ".content" %>
+              </i>
+            </th>
+            <th>
+              <i class="fa fa-text-height">
+                <%= t ".content_category" %>
+              </i>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+                <!--To Do: Code Content Category Each Here -->
+            <tr>
+              <td>
+                <!--To Do: Category Content Here -->
+              </td>
+              <td>
+                <!--To Do: Add Categpory Name Here -->
+              </td>
+              <td>
+                <div class="admin-actions">
+                  <%= link_to t(".tablink_home"), class: "button btn btn-success btn-xs" do %> 
+                   <i class="fa fa-file-text"></i>
+                  <% end %>
+                  <%= link_to t(".tablink_home"), class: "button btn btn-primary btn-xs" do %>  
+                    <i class="fa fa-pencil"></i>
+                  <% end %>
+                  <%= link_to t(".tablink_home"), method: :delete,
+                    data: {confirm: "You want to delete?"},class: "button btn btn-danger btn-xs" do %> 
+                    <i class="fa fa-trash-o"></i>
+                  <% end %>
+                </div>
+              </td>
+            </tr>
+            <!--To Do: Add End % here -->
+          </tbody>
+      </table>
+    <!--To Do: Add will_paginate @categories here -->  
+    </div>
+  </div>
+</section>

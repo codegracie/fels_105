@@ -1,4 +1,17 @@
 Rails.application.routes.draw do
+  
+  #namespace :admin do
+  #get 'categories/index'
+  #get 'categories/new'
+  #get 'categories/edit'
+  #get 'categories/show'
+  #get 'categories/index'
+  #get 'categories/new'
+  #get 'categories/edit'
+  #get 'categories/show'
+  #end
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -7,7 +20,8 @@ Rails.application.routes.draw do
   get     "home"        => "home#index", as: "home"
   get     "about"       => "home#about", as: "about"
   get     "words"       => "words#index", as: "words"
-  get     "categories"  => "categories#index", as: "categories"
+  #get     "categories"  => "categories#index", as: "categories"
+  #get     "admin/categories/index"  => "admin#categories#index", as: "admincategory"
   get     "login"       => "sessions#new"
   post    "login"       => "sessions#create"
   delete  "logout"      => "sessions#destroy"
@@ -15,11 +29,17 @@ Rails.application.routes.draw do
 
   namespace :admin do
     root "dashboard#index" #Partial TODO
+    #get     "/categories"  => "categories#index", as: "categories"
+ 
     resources :categories
     resources :words
     resources :answers
     resources :users
   end
+
+
+
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
