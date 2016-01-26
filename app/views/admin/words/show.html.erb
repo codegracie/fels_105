@@ -25,7 +25,9 @@
                   <%= t ".content" %>
                 </label>
                 <span>
-                  <%= @word.content %>
+
+                    <!--To Do: Code Content Category Each Here -->
+                  
                 </span>
               </li>
               <li>
@@ -33,14 +35,17 @@
                   <%= t ".content_category" %>
                 </label>
                 <span>
-                  <%= @word.category.name %>
+                    <!--To Do: Code Content Category Name Here -->
+                  
                 </span>
               </li>
             </ul>
           </div>
           <div class="add-task-row">
+            <!--To Do: Edit Button Here -->
             <%= link_to t(".edit"), edit_admin_word_path(@word),
               class: "btn btn-success btn-sm pull-left" %>
+            <!--To Do: New Button Here -->
             <%= link_to t(".add"), new_admin_word_path(@word),
               class: "btn btn-default btn-sm pull-right" %>
           </div>
