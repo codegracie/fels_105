@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   get     "home"        => "home#index", as: "home"
   get     "about"       => "home#about", as: "about"
   get     "words"       => "words#index", as: "words"
-  #get     "categories"  => "categories#index", as: "categories"
+  get     "categories"  => "admin/categories#index", as: "categories"
   #get     "admin/categories/index"  => "admin#categories#index", as: "admincategory"
   get     "login"       => "sessions#new"
   post    "login"       => "sessions#create"
