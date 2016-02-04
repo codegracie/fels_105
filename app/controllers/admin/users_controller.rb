@@ -1,6 +1,14 @@
 class Admin::UsersController < AdminController
+  
   def index
     @users = User.paginate page: params[:page], per_page: 10
+    respond_to do |format|
+      format.html
+      format.csv do
+        headers["Content-Disposition"] = "attachment; filename=\"user-list\.csv"
+        headers["Content-Type"] ||= "text/csv"
+      end 
+    end 
   end
 
   def show

@@ -161,6 +161,7 @@ en:
         name: Full name
         email: Email Address
         admin: Admin?
+        download_csv: Export to CSV
       show:
         title: Users
         name: Full Name

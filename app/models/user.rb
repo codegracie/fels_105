@@ -18,6 +18,16 @@ class User < ActiveRecord::Base
   before_save   :downcase_email
   before_create :create_activation_digest
 
+  def self.to_csv
+    attributes = %w{full_name email admin}
+    CSV.generate(headers: true) do |csv|
+      csv << attributes
+      all.each do |user|
+        csv << attributes.map{ |attr| user.send(attr) }
+      end
+    end
+  end
+  
   def full_name
     "#{first_name} #{last_name}"
   end
